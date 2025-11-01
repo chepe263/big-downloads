@@ -32,7 +32,7 @@ jobs:
         run: aria2c -x 16 -o "${{ inputs.file_name }}" "${{ inputs.url }}"
         
       - name: Upload torrent file
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ inputs.file_name }}
           path: ${{ inputs.file_name }}
